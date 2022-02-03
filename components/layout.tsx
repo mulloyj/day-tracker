@@ -13,7 +13,11 @@ export default function Layout({ children }: {children: React.ReactNode}) {
                 />
                 <title>{siteTitle}</title> 
             </Head>
-            <main>{children}</main>
+            <main>
+                <div className="w-screen h-screen bg-neutral-900 font-mono text-lime-300">
+                    {children}
+                </div>
+            </main>
         </div>
     );
 }
